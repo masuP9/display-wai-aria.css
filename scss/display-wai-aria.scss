@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*! display-wai-aria.css v0.0.1 | MIT License | github.com/masuP9/display-wai-aria.css */
+
+/*
+ common style
+*/
+
+%common-style {
+  display: inline-block !important;
+  margin-left: .25em;
+  padding: 0 .25em !important;
+  border-style: solid !important;
+  border-width: 3px !important;
+  font: inherit !important;
+  font-size: .875rem !important;
+  font-weight: bold !important;
+  line-height: 1.7 !important;
+  vertical-align: super !important;
+  white-space: nowrap !important;
+}
+
+/*
+ role
+*/
+
+[role] {
+  background-color: #ff9 !important;
+}
+
+[role]::after {
+  content: "role: " attr(role);
+  @extend %common-style;
+  background-color: #ff9 !important;
+}
+
+/*
+ state
+*/
+
+$aria-state: busy,checked,disabled,expanded,grabbed,hidden,invalid,pressed,selected;
+
+@each $state in $aria-state {
+  [aria-#{$state}] {
+    @extend %state-style;
+  }
+  [aria-#{$state}]::after {
+    content: "aria-#{$state}: " attr(aria-#{$state}) !important;
+    @extend %common-style;
+    @extend %state-style;
+  }
+}
+
+/* state-style */
+%state-style {
+  background-color: #f9f;
+}
+
+/*
+ property
+*/
+
+$aria-property: activedescendant,atomic,autocomplete,controls,describedby,dropeffect,flowto,haspopup,label,labelledby,level,live,multiline,multiselectable,orientation,owns,posinset,readonly,relevant,required,setsize,sort,valuemax,valuemin,valuenow,valuetext;
+
+@each $property in $aria-property {
+  [aria-#{$property}] {
+    @extend %property-style;
+  }
+  [aria-#{$property}]::after {
+    content: "aria-#{$property}: " attr(aria-#{$property}) !important;
+    @extend %common-style;
+    @extend %property-style;
+  }
+}
+
+/* property-style */
+%property-style {
+  background-color: #9ff;
+}
