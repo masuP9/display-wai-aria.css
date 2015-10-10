@@ -1,8 +1,8 @@
-/*! display-wai-aria.css v0.0.1 | MIT License | github.com/masuP9/display-wai-aria.css */
+/*! display-wai-aria.css v0.0.2 | MIT License | github.com/masuP9/display-wai-aria.css */
 /*
  common style
 */
-[role]::after, [aria-busy]::after, [aria-checked]::after, [aria-disabled]::after, [aria-expanded]::after, [aria-grabbed]::after, [aria-hidden]::after, [aria-invalid]::after, [aria-pressed]::after, [aria-selected]::after, [aria-activedescendant]::after, [aria-atomic]::after, [aria-autocomplete]::after, [aria-controls]::after, [aria-describedby]::after, [aria-dropeffect]::after, [aria-flowto]::after, [aria-haspopup]::after, [aria-label]::after, [aria-labelledby]::after, [aria-level]::after, [aria-live]::after, [aria-multiline]::after, [aria-multiselectable]::after, [aria-orientation]::after, [aria-owns]::after, [aria-posinset]::after, [aria-readonly]::after, [aria-relevant]::after, [aria-required]::after, [aria-setsize]::after, [aria-sort]::after, [aria-valuemax]::after, [aria-valuemin]::after, [aria-valuenow]::after, [aria-valuetext]::after {
+[role]::after, [aria-busy]::after, [aria-checked]::after, [aria-disabled]::after, [aria-expanded]::after, [aria-grabbed]::after, [aria-hidden]::after, [aria-invalid]::after, [aria-pressed]::after, [aria-selected]::after, [aria-activedescendant]::before, [aria-atomic]::before, [aria-autocomplete]::before, [aria-controls]::before, [aria-describedby]::before, [aria-dropeffect]::before, [aria-flowto]::before, [aria-haspopup]::before, [aria-label]::before, [aria-labelledby]::before, [aria-level]::before, [aria-live]::before, [aria-multiline]::before, [aria-multiselectable]::before, [aria-orientation]::before, [aria-owns]::before, [aria-posinset]::before, [aria-readonly]::before, [aria-relevant]::before, [aria-required]::before, [aria-setsize]::before, [aria-sort]::before, [aria-valuemax]::before, [aria-valuemin]::before, [aria-valuenow]::before, [aria-valuetext]::before {
   display: inline-block !important;
   margin-left: .25em;
   padding: 0 .25em !important;
@@ -76,112 +76,112 @@
 /*
  property
 */
-[aria-activedescendant]::after {
+[aria-activedescendant]::before {
   content: "aria-activedescendant: " attr(aria-activedescendant) !important;
 }
 
-[aria-atomic]::after {
+[aria-atomic]::before {
   content: "aria-atomic: " attr(aria-atomic) !important;
 }
 
-[aria-autocomplete]::after {
+[aria-autocomplete]::before {
   content: "aria-autocomplete: " attr(aria-autocomplete) !important;
 }
 
-[aria-controls]::after {
+[aria-controls]::before {
   content: "aria-controls: " attr(aria-controls) !important;
 }
 
-[aria-describedby]::after {
+[aria-describedby]::before {
   content: "aria-describedby: " attr(aria-describedby) !important;
 }
 
-[aria-dropeffect]::after {
+[aria-dropeffect]::before {
   content: "aria-dropeffect: " attr(aria-dropeffect) !important;
 }
 
-[aria-flowto]::after {
+[aria-flowto]::before {
   content: "aria-flowto: " attr(aria-flowto) !important;
 }
 
-[aria-haspopup]::after {
+[aria-haspopup]::before {
   content: "aria-haspopup: " attr(aria-haspopup) !important;
 }
 
-[aria-label]::after {
+[aria-label]::before {
   content: "aria-label: " attr(aria-label) !important;
 }
 
-[aria-labelledby]::after {
+[aria-labelledby]::before {
   content: "aria-labelledby: " attr(aria-labelledby) !important;
 }
 
-[aria-level]::after {
+[aria-level]::before {
   content: "aria-level: " attr(aria-level) !important;
 }
 
-[aria-live]::after {
+[aria-live]::before {
   content: "aria-live: " attr(aria-live) !important;
 }
 
-[aria-multiline]::after {
+[aria-multiline]::before {
   content: "aria-multiline: " attr(aria-multiline) !important;
 }
 
-[aria-multiselectable]::after {
+[aria-multiselectable]::before {
   content: "aria-multiselectable: " attr(aria-multiselectable) !important;
 }
 
-[aria-orientation]::after {
+[aria-orientation]::before {
   content: "aria-orientation: " attr(aria-orientation) !important;
 }
 
-[aria-owns]::after {
+[aria-owns]::before {
   content: "aria-owns: " attr(aria-owns) !important;
 }
 
-[aria-posinset]::after {
+[aria-posinset]::before {
   content: "aria-posinset: " attr(aria-posinset) !important;
 }
 
-[aria-readonly]::after {
+[aria-readonly]::before {
   content: "aria-readonly: " attr(aria-readonly) !important;
 }
 
-[aria-relevant]::after {
+[aria-relevant]::before {
   content: "aria-relevant: " attr(aria-relevant) !important;
 }
 
-[aria-required]::after {
+[aria-required]::before {
   content: "aria-required: " attr(aria-required) !important;
 }
 
-[aria-setsize]::after {
+[aria-setsize]::before {
   content: "aria-setsize: " attr(aria-setsize) !important;
 }
 
-[aria-sort]::after {
+[aria-sort]::before {
   content: "aria-sort: " attr(aria-sort) !important;
 }
 
-[aria-valuemax]::after {
+[aria-valuemax]::before {
   content: "aria-valuemax: " attr(aria-valuemax) !important;
 }
 
-[aria-valuemin]::after {
+[aria-valuemin]::before {
   content: "aria-valuemin: " attr(aria-valuemin) !important;
 }
 
-[aria-valuenow]::after {
+[aria-valuenow]::before {
   content: "aria-valuenow: " attr(aria-valuenow) !important;
 }
 
-[aria-valuetext]::after {
+[aria-valuetext]::before {
   content: "aria-valuetext: " attr(aria-valuetext) !important;
 }
 
 /* property-style */
-[aria-activedescendant], [aria-activedescendant]::after, [aria-atomic], [aria-atomic]::after, [aria-autocomplete], [aria-autocomplete]::after, [aria-controls], [aria-controls]::after, [aria-describedby], [aria-describedby]::after, [aria-dropeffect], [aria-dropeffect]::after, [aria-flowto], [aria-flowto]::after, [aria-haspopup], [aria-haspopup]::after, [aria-label], [aria-label]::after, [aria-labelledby], [aria-labelledby]::after, [aria-level], [aria-level]::after, [aria-live], [aria-live]::after, [aria-multiline], [aria-multiline]::after, [aria-multiselectable], [aria-multiselectable]::after, [aria-orientation], [aria-orientation]::after, [aria-owns], [aria-owns]::after, [aria-posinset], [aria-posinset]::after, [aria-readonly], [aria-readonly]::after, [aria-relevant], [aria-relevant]::after, [aria-required], [aria-required]::after, [aria-setsize], [aria-setsize]::after, [aria-sort], [aria-sort]::after, [aria-valuemax], [aria-valuemax]::after, [aria-valuemin], [aria-valuemin]::after, [aria-valuenow], [aria-valuenow]::after, [aria-valuetext], [aria-valuetext]::after {
+[aria-activedescendant], [aria-activedescendant]::before, [aria-atomic], [aria-atomic]::before, [aria-autocomplete], [aria-autocomplete]::before, [aria-controls], [aria-controls]::before, [aria-describedby], [aria-describedby]::before, [aria-dropeffect], [aria-dropeffect]::before, [aria-flowto], [aria-flowto]::before, [aria-haspopup], [aria-haspopup]::before, [aria-label], [aria-label]::before, [aria-labelledby], [aria-labelledby]::before, [aria-level], [aria-level]::before, [aria-live], [aria-live]::before, [aria-multiline], [aria-multiline]::before, [aria-multiselectable], [aria-multiselectable]::before, [aria-orientation], [aria-orientation]::before, [aria-owns], [aria-owns]::before, [aria-posinset], [aria-posinset]::before, [aria-readonly], [aria-readonly]::before, [aria-relevant], [aria-relevant]::before, [aria-required], [aria-required]::before, [aria-setsize], [aria-setsize]::before, [aria-sort], [aria-sort]::before, [aria-valuemax], [aria-valuemax]::before, [aria-valuemin], [aria-valuemin]::before, [aria-valuenow], [aria-valuenow]::before, [aria-valuetext], [aria-valuetext]::before {
   background-color: #9ff;
 }
 

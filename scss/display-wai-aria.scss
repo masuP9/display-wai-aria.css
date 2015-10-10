@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*! display-wai-aria.css v0.0.1 | MIT License | github.com/masuP9/display-wai-aria.css */
+/*! display-wai-aria.css v0.0.2 | MIT License | github.com/masuP9/display-wai-aria.css */
 
 /*
  common style
@@ -67,7 +67,7 @@ $aria-property: activedescendant,atomic,autocomplete,controls,describedby,dropef
   [aria-#{$property}] {
     @extend %property-style;
   }
-  [aria-#{$property}]::after {
+  [aria-#{$property}]::before {
     content: "aria-#{$property}: " attr(aria-#{$property}) !important;
     @extend %common-style;
     @extend %property-style;
