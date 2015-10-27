@@ -10,3 +10,7 @@ javascript:(function(){dwa=document.createElement('link');dwa.href="https://rawg
 ```
 
 [display-wai-aria.css](http://masup9.github.io/display-wai-aria/)
+
+## ChangeLog
+
+- v0.1.0 Added support for WAI-ARIA 1.1[WD]
