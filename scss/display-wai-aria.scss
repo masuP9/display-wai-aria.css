@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*! display-wai-aria.css v0.0.2 | MIT License | github.com/masuP9/display-wai-aria.css */
+/*! display-wai-aria.css v0.1.2 | MIT License | github.com/masuP9/display-wai-aria.css */
 
 /*
  common style
@@ -39,7 +39,7 @@
  state
 */
 
-$aria-state: busy,checked,disabled,expanded,grabbed,hidden,invalid,pressed,selected;
+$aria-state: busy,checked,current,disabled,expanded,grabbed,hidden,invalid,pressed,selected;
 
 @each $state in $aria-state {
   [aria-#{$state}] {
@@ -61,7 +61,7 @@ $aria-state: busy,checked,disabled,expanded,grabbed,hidden,invalid,pressed,selec
  property
 */
 
-$aria-property: activedescendant,atomic,autocomplete,controls,describedby,dropeffect,flowto,haspopup,label,labelledby,level,live,multiline,multiselectable,orientation,owns,posinset,readonly,relevant,required,setsize,sort,valuemax,valuemin,valuenow,valuetext;
+$aria-property: activedescendant,atomic,autocomplete,colcount,colindex,colspan,controls,describedat,describedby,dropeffect,flowto,haspopup,label,labelledby,level,live,modal,multiline,multiselectable,orientation,owns,placeholder,posinset,readonly,relevant,required,roledescription,rowcount,rowindex,rowspan,setsize,sort,valuemax,valuemin,valuenow,valuetext;
 
 @each $property in $aria-property {
   [aria-#{$property}] {
