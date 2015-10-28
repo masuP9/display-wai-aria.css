@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>test display-wai-aria.css</title>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="../display-wai-aria.css" />
+</head>
+<body>
+<header role="banner">
+<h1>test display-wai-aria.css</h1>
+</header>
+
+<div class="main">
+
+<section>
+<h2>ARIA Techs 1-1.</h2>
+<div class="body">
+<button aria-label="Close" aria-describedby="descriptionClose"
+        onclick="myDialog.close()">X</button>
+<div id="descriptionClose">Closing this window will discard any information entered and
+return you back to the main page</div>  
+<!-- /.body --></div>
+</section>
+
+<!-- /.main --></div>
+
+<footer role="contentinfo">
+<p><small>copyright &copy; 2015 Soichi Masuda</small></p>
+</footer>
+</body>
+</html>

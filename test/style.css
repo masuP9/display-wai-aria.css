@@ -1,0 +1,16 @@
+@charset "UTF-8" ;
+
+body {
+  width: 93.75%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.main {
+  margin: 6rem 0;
+}
+
+h2 {
+  border-bottom: 3px solid currentColor;
+  color: #339;
+}
