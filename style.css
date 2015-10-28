@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 3em 3.125% 0;
+  font-size: 1.25em;
+}
+
+[role="tooltip"] {
+  display: none;
+  font-size: smaller;
+}
+
+.hasToolTipText:hover #abbr-WAI-ARIA {
+  display: block;
+  position: absolute;
+  padding: 1em;
+  border: 3px solid #333;
+  background-color: #fff;
+}
+
+.try {
+  margin-top: 2rem;
+}
+
+[role="button"] {
+  position: relative;
+  display: inline-block;
+  padding: .5em 1em;
+  border: 3px solid #c5401a;
+  border-radius: .4em;
+  box-shadow: 1px 2px 0 #c5401a;
+  color: #c5401a;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-decoration: none;
+  transition: margin .2s ease;
+  vertical-align: baseline;
+}
+
+[role="button"]:hover {
+  margin-top: -2px;
+  margin-bottom: 2px;
+  color: #c5401a;
+  cursor: move;
+}
+
+[role="button"]:active {
+  top: 2px;
+  box-shadow: inset 1px 1px 0 0 #d5502a;
+}
+
+[role="button"] + small {
+  display: block;
+  margin-top: .5em;
+}
+
+footer {
+  margin: 6em 0 2em;
+  text-align: center;
+}
+
+@media (max-width: 40rem) {
+  body {
+    font-size: 1em;
+  }
+}
