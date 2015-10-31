@@ -6,11 +6,33 @@ body {
   margin: 0 auto;
 }
 
+header,
+footer {
+  padding: .5rem 1rem;
+}
+
 .main {
   margin: 6rem 0;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 h2 {
   border-bottom: 3px solid currentColor;
   color: #339;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: smaller;
+  text-align: right;
+}
+
+blockquote {
+  margin: 0 0 1rem;
 }
