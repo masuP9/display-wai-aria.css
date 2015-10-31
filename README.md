@@ -15,4 +15,6 @@ javascript:(function(){dwa=document.createElement('link');dwa.href="https://rawg
 
 ## ChangeLog
 
+- v0.2.0 Added style when value is false
+- v0.1.1 Fixed style in the case of when layer overlaped.
 - v0.1.0 Added support for WAI-ARIA 1.1[WD]
