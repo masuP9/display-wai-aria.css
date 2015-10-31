@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>test display-wai-aria.css</title>
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="../display-wai-aria.css" />
+<script src="jquery.min.js"></script>
+</head>
+<body>
+<header role="banner">
+<h1>test display-wai-aria.css</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="#aria-techs-1.1">ARIA Techs 1-1.</a></li>
+<li><a href="#aria-techs-2.1">ARIA Techs 2-1.</a></li>
+<li><a href="#aria-techs-4.2">ARIA Techs 4-2.</a></li>
+<li><a href="#aria-techs-5.1">ARIA Techs 5-1.</a></li>
+</ul>
+</nav>
+
+<div class="main">
+<main>
+
+<section id="aria-techs-1.1">
+<h2>ARIA Techs 1-1. Using aria-describedby property to describe a Close button's action</h2>
+
+<figure>
+<blockquote>
+<button aria-label="Close" aria-describedby="descriptionClose"
+        onclick="myDialog.close()">X</button>
+<div id="descriptionClose">Closing this window will discard any information entered and
+return you back to the main page</div>
+</blockquote>
+<figcaption><a href="http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA1-ex1"><cite>http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA1-ex1</cite></a></figcaption>
+</figure>
+
+</section>
+
+<section id="aria-techs-2.1">
+<h2>ARIA Techs 2-1.</h2>
+<figure>
+<blockquote>
+  <form action="#" method="post" id="login1" onsubmit="return errorCheck1()">
+    <p>Note: [*]denotes mandatory field</p>
+    <p>
+      <label for="usrname">Login name: </label>
+      <input type="text" name="usrname" id="usrname" aria-required="true"/>[*]
+    </p>
+    <p>
+      <label for="pwd">Password</label>
+      <input type="password" name="pwd" id="pwd" size="12" aria-required="true" />[*]
+    </p>
+    <p>
+      <input type="submit" value="Login" id="next_btn" name="next_btn"/>
+    </p>
+
+  </form>
+</blockquote>
+<figcaption><a href="http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA2-ex1"><cite>http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA2-ex1</cite></a></figcaption>
+</figure>
+
+</section>
+
+<section id="aria-techs-4.2">
+<h2>ARIA Techs 4-2. A Tree Widget</h2>
+<figure>
+<blockquote>
+  <ul role="tree" tabindex="0">
+  <li role="treeitem">Birds</li>
+  <li role="treeitem">Cats
+    <ul role="group">
+      <li role="treeitem">Siamese</li>
+      <li role="treeitem">Tabby</li>
+    </ul>
+  </li>
+  <li role="treeitem">Dogs
+    <ul role="group">
+      <li role="treeitem">Small Breeds
+        <ul role="group">
+          <li role="treeitem">Chihuahua</li>
+          <li role="treeitem">Italian Greyhound</li>
+          <li role="treeitem">Japanese Chin</li>
+        </ul>
+      </li>
+      <li role="treeitem">Medium Breeds
+        <ul role="group">
+          <li role="treeitem">Beagle</li>
+          <li role="treeitem">Cocker Spaniel</li>
+          <li role="treeitem">Pit Bull</li>
+        </ul>
+      </li>
+      <li role="treeitem">Large Breeds
+        <ul role="group">
+          <li role="treeitem">Afghan</li>
+          <li role="treeitem">Great Dane</li>
+          <li role="treeitem">Mastiff</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</blockquote>
+<figcaption><a href="http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA4-ex2"><cite>http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA4-ex2</cite></a></figcaption>
+</figure>
+
+</section>
+
+<section id="aria-techs-5.1">
+<h2>ARIA Techs 5-1. A toggle button</h2>
+<figure>
+<blockquote>
+  <li id="bold1"
+    class="toggleButton"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+    aria-labelledby="bold_label"
+    aria-controls="text1">
+    <img src="http://www.oaa-accessibility.org/media/examples/images/button-bold.png" alt="bold text" align="middle">
+  </li>
+  <script>
+  /**
+   * togglePressed() toggles the aria-pressed atribute between true or false
+   *
+   * @param ( id object) button to be operated on
+   *
+   * @return N/A
+   */
+  function togglePressed(id) {
+    // reverse the aria-pressed state
+    if ($(id).attr('aria-pressed') == 'true') {
+      $(id).attr('aria-pressed', 'false');
+    }
+    else {
+      $(id).attr('aria-pressed', 'true');
+    }
+  }
+  </script>
+</blockquote>
+<figcaption><a href="http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA5-ex1"><cite>http://www.w3.org/WAI/GL/WCAG20-TECHS/aria.html#ARIA5-ex1</cite></a></figcaption>
+</figure>
+<script>
+  $('#bold1').on('click', function(){
+    togglePressed('#bold1');
+  });
+</script>
+</section>
+
+</main>
+<!-- /.main --></div>
+
+<footer role="contentinfo">
+<p><small>copyright &copy; 2015 Soichi Masuda</small></p>
+</footer>
+</body>
+</html>
