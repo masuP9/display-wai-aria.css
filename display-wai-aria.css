@@ -1,4 +1,4 @@
-/*! display-wai-aria.css v0.1.0 | MIT License | github.com/masuP9/display-wai-aria.css */
+/*! display-wai-aria.css v0.1.1 | MIT License | github.com/masuP9/display-wai-aria.css */
 /*
  common style
 */
@@ -8,8 +8,8 @@
   margin-right: .25em !important;
   padding: 0 .25em !important;
   border-style: solid !important;
-  border-width: 3px !important;
-  color: #777 !important;
+  border-width: 2px !important;
+  color: #333 !important;
   font: inherit !important;
   font-size: .875rem !important;
   font-weight: bold !important;
@@ -22,12 +22,14 @@
  role
 */
 [role] {
-  background-color: #ff9 !important;
+  background-color: rgba(255, 255, 0, 0.25) !important;
+  box-shadow: inset 0 0 0 1px #cccc00 !important;
 }
 
 [role]::after {
   content: "role: " attr(role);
-  background-color: #ff9 !important;
+  background-color: rgba(255, 255, 0, 0.25) !important;
+  box-shadow: inset 0 0 0 1px #cccc00 !important;
 }
 
 /*
@@ -75,7 +77,8 @@
 
 /* state-style */
 [aria-busy], [aria-busy]::after, [aria-checked], [aria-checked]::after, [aria-current], [aria-current]::after, [aria-disabled], [aria-disabled]::after, [aria-expanded], [aria-expanded]::after, [aria-grabbed], [aria-grabbed]::after, [aria-hidden], [aria-hidden]::after, [aria-invalid], [aria-invalid]::after, [aria-pressed], [aria-pressed]::after, [aria-selected], [aria-selected]::after {
-  background-color: #f9f;
+  background-color: rgba(255, 153, 255, 0.25) !important;
+  box-shadow: inset 0 0 0 1px #ff66ff !important;
 }
 
 /*
@@ -227,7 +230,8 @@
 
 /* property-style */
 [aria-activedescendant], [aria-activedescendant]::before, [aria-atomic], [aria-atomic]::before, [aria-autocomplete], [aria-autocomplete]::before, [aria-colcount], [aria-colcount]::before, [aria-colindex], [aria-colindex]::before, [aria-colspan], [aria-colspan]::before, [aria-controls], [aria-controls]::before, [aria-describedat], [aria-describedat]::before, [aria-describedby], [aria-describedby]::before, [aria-dropeffect], [aria-dropeffect]::before, [aria-flowto], [aria-flowto]::before, [aria-haspopup], [aria-haspopup]::before, [aria-label], [aria-label]::before, [aria-labelledby], [aria-labelledby]::before, [aria-level], [aria-level]::before, [aria-live], [aria-live]::before, [aria-modal], [aria-modal]::before, [aria-multiline], [aria-multiline]::before, [aria-multiselectable], [aria-multiselectable]::before, [aria-orientation], [aria-orientation]::before, [aria-owns], [aria-owns]::before, [aria-placeholder], [aria-placeholder]::before, [aria-posinset], [aria-posinset]::before, [aria-readonly], [aria-readonly]::before, [aria-relevant], [aria-relevant]::before, [aria-required], [aria-required]::before, [aria-roledescription], [aria-roledescription]::before, [aria-rowcount], [aria-rowcount]::before, [aria-rowindex], [aria-rowindex]::before, [aria-rowspan], [aria-rowspan]::before, [aria-setsize], [aria-setsize]::before, [aria-sort], [aria-sort]::before, [aria-valuemax], [aria-valuemax]::before, [aria-valuemin], [aria-valuemin]::before, [aria-valuenow], [aria-valuenow]::before, [aria-valuetext], [aria-valuetext]::before {
-  background-color: #9ff;
+  background-color: rgba(153, 255, 255, 0.25) !important;
+  box-shadow: inset 0 0 0 1px #66ffff !important;
 }
 
 /*# sourceMappingURL=display-wai-aria.css.map */
