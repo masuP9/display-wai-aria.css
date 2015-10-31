@@ -234,4 +234,10 @@
   box-shadow: inset 0 0 0 1px #66ffff !important;
 }
 
+/* false-style */
+[aria-busy="false"]::after, [aria-checked="false"]::after, [aria-current="false"]::after, [aria-disabled="false"]::after, [aria-expanded="false"]::after, [aria-grabbed="false"]::after, [aria-hidden="false"]::after, [aria-invalid="false"]::after, [aria-pressed="false"]::after, [aria-selected="false"]::after, [aria-activedescendant="false"]::after, [aria-atomic="false"]::after, [aria-autocomplete="false"]::after, [aria-colcount="false"]::after, [aria-colindex="false"]::after, [aria-colspan="false"]::after, [aria-controls="false"]::after, [aria-describedat="false"]::after, [aria-describedby="false"]::after, [aria-dropeffect="false"]::after, [aria-flowto="false"]::after, [aria-haspopup="false"]::after, [aria-label="false"]::after, [aria-labelledby="false"]::after, [aria-level="false"]::after, [aria-live="false"]::after, [aria-modal="false"]::after, [aria-multiline="false"]::after, [aria-multiselectable="false"]::after, [aria-orientation="false"]::after, [aria-owns="false"]::after, [aria-placeholder="false"]::after, [aria-posinset="false"]::after, [aria-readonly="false"]::after, [aria-relevant="false"]::after, [aria-required="false"]::after, [aria-roledescription="false"]::after, [aria-rowcount="false"]::after, [aria-rowindex="false"]::after, [aria-rowspan="false"]::after, [aria-setsize="false"]::after, [aria-sort="false"]::after, [aria-valuemax="false"]::after, [aria-valuemin="false"]::after, [aria-valuenow="false"]::after, [aria-valuetext="false"]::after {
+  border-style: dotted !important;
+  color: #666 !important;
+}
+
 /*# sourceMappingURL=display-wai-aria.css.map */

@@ -57,6 +57,10 @@ $aria-state: busy,checked,current,disabled,expanded,grabbed,hidden,invalid,press
     @extend %common-style;
     @extend %state-style;
   }
+
+  [aria-#{$state}="false"]::after {
+    @extend %false-style;
+  }
 }
 
 /* state-style */
@@ -80,9 +84,18 @@ $aria-property: activedescendant,atomic,autocomplete,colcount,colindex,colspan,c
     @extend %common-style;
     @extend %property-style;
   }
+  [aria-#{$property}="false"]::after {
+    @extend %false-style;
+  }
 }
 
 /* property-style */
 %property-style {
   @include element-style($color-property);
+}
+
+/* false-style */
+%false-style {
+  border-style: dotted !important;
+  color: #666 !important;
 }
