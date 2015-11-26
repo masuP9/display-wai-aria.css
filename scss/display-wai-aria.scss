@@ -1,6 +1,6 @@
 @charset "utf-8" ;
 
-/*! display-wai-aria.css v0.2.0 | MIT License | github.com/masuP9/display-wai-aria.css */
+/*! display-wai-aria.css v0.2.1 | MIT License | github.com/masuP9/display-wai-aria.css */
 
 /*
  common style
@@ -72,7 +72,7 @@ $aria-state: busy,checked,current,disabled,expanded,grabbed,hidden,invalid,press
  property
 */
 $color-property: #9ff;
-$aria-property: activedescendant,atomic,autocomplete,colcount,colindex,colspan,controls,describedat,describedby,dropeffect,flowto,haspopup,label,labelledby,level,live,modal,multiline,multiselectable,orientation,owns,placeholder,posinset,readonly,relevant,required,roledescription,rowcount,rowindex,rowspan,setsize,sort,valuemax,valuemin,valuenow,valuetext;
+$aria-property: activedescendant,atomic,autocomplete,colcount,colindex,colspan,controls,describedat,describedby,dropeffect,errormessage,flowto,haspopup,label,labelledby,level,live,modal,multiline,multiselectable,orientation,owns,placeholder,posinset,readonly,relevant,required,roledescription,rowcount,rowindex,rowspan,setsize,sort,valuemax,valuemin,valuenow,valuetext;
 
 @each $property in $aria-property {
   [aria-#{$property}] {
@@ -84,6 +84,7 @@ $aria-property: activedescendant,atomic,autocomplete,colcount,colindex,colspan,c
     @extend %common-style;
     @extend %property-style;
   }
+
   [aria-#{$property}="false"]::after {
     @extend %false-style;
   }
