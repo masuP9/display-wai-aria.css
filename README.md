@@ -15,6 +15,7 @@ javascript:(function(){dwa=document.createElement('link');dwa.href="https://rawg
 
 ## ChangeLog
 
+- v0.2.3 Added aria-keyshortcuts property.
 - v0.2.2 Added aria-details property.
 - v0.2.1 Added aria-errormessage property.
 - v0.2.0 Added style when value is false.
