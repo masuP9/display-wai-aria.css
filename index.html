@@ -23,14 +23,30 @@
 <h2>How to use</h2>
 <p>Just drag the display WAI-ARIA button to your bookmarks bar, and you'll be able to use display-wai-aria.css on any page:</p>
 
-<p class="try"><a href="javascript:(function(){dwa=document.createElement('link');dwa.href="https://rawgit.com/masuP9/display-wai-aria.css/master/display-wai-aria.css";dwa.rel="stylesheet";dwa.media="all";document.head.appendChild(dwa);})();" id="tryButton" role="button">display WAI-ARIA</a>
-<small>If you want try, you can just click the button</small></p>
+<p class="try">
+  <a
+    href="javascript:(function(){dwa=document.createElement('link');dwa.href="https://rawgit.com/masuP9/display-wai-aria.css/master/display-wai-aria.css";dwa.rel="stylesheet";dwa.media="all";document.head.appendChild(dwa);})();"
+    id="tryButton"
+    role="button"
+    aria-describedby="tryButtonNote"
+  >
+    display WAI-ARIA
+  </a>
+  <small id="tryButtonNote">If you want try, you can just click the button</small>
+</p>
 
-<footer role="contentinfo">
-<p><a href="https://github.com/masuP9/display-wai-aria.css"><img src="GitHub-Mark-120px-plus.png" width="60" alt="Github Page" /></a></p>
+<footer>
+<p>
+  <a href="https://github.com/masuP9/display-wai-aria.css">
+    <img src="GitHub-Mark-120px-plus.png" width="60" alt="Github Page" />
+  </a>
+</p>
+
 <p>The MIT License (MIT)</p>
+
 <p>Copyright &copy; 2015 <a href="http://masuP.net">Masuda Soichi</a></p>
 </footer>
+
 <script src="run.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
