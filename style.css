@@ -7,17 +7,23 @@ body {
   font-size: 1.25em;
 }
 
-[role="tooltip"] {
-  display: none;
-  font-size: smaller;
+.hasToolTipText {
+  display: relative;
 }
 
-.hasToolTipText:hover #abbr-WAI-ARIA {
+[role="tooltip"] {
   display: block;
+  visibility: hidden;
   position: absolute;
   padding: 1em;
   border: 3px solid #333;
   background-color: #fff;
+  font-size: smaller;
+}
+
+.hasToolTipText:hover #abbr-WAI-ARIA,
+.hasToolTipText a:focus ~ #abbr-WAI-ARIA {
+  visibility: visible;
 }
 
 .try {
